@@ -1,0 +1,134 @@
+{
+  "slug": "gigante",
+  "name": "Gigante",
+  "nameJa": "ジガンテ",
+  "description": "品質と運用を安定させる、現場の判断を減らすバリスタロボット",
+  "category": ["飲食", "接客"],
+  "priceRange": "月額15万円〜",
+  "heroVideoSrc": "/videos/robot-hero-placeholder.mp4",
+  "heroOverlay": {
+    "headline": "現場を、静かに安定させる。",
+    "subheadline": "貴社にあったテクノロジーを提案します"
+  },
+  "images": [
+    { "src": "/images/gigante-1.jpg", "alt": "Giganteロボットの動作イメージ" },
+    { "src": "/images/gigante-2.jpg", "alt": "コーヒー抽出の様子" },
+    { "src": "/images/gigante-3.jpg", "alt": "店舗での設置イメージ" }
+  ],
+  "specs": {
+    "サイズ": "幅80cm × 奥行き60cm × 高さ150cm",
+    "重量": "約120kg",
+    "対応カップサイズ": "S/M/L",
+    "1時間あたりの処理能力": "最大60杯",
+    "電源": "AC100V",
+    "設置条件": "幅1m × 奥行き0.8m以上のスペース、AC100V電源"
+  },
+  "capacityRange": {
+    "minPerDay": 30,
+    "maxPerDay": 100,
+    "recommendedMin": 40,
+    "recommendedMax": 80,
+    "unit": "杯/日",
+    "explanation": "安定して処理できる日次能力の範囲。メニュー数、ピーク集中度、補充タイミングにより変動します。"
+  },
+  "defaults": {
+    "cupsPerDay": 50,
+    "peakHoursPerDay": 3,
+    "hourlyWageDefault": 1200
+  },
+  "assumptions": {
+    "secondsSavedPerCup": 180,
+    "disclaimer": "目安。現場条件で変動。診断で精査。"
+  },
+  "solves": [
+    "接客品質のばらつき",
+    "スタッフの教育コストと時間",
+    "ピーク時の対応力不足",
+    "人手不足による営業時間の短縮"
+  ],
+  "capabilities": [
+    {
+      "title": "多様なドリンクとカスタマイズ",
+      "description": "エスプレッソ、カプチーノ、ラテなど基本的なドリンクを自動抽出。温度、ミルク量、シロップなどのカスタマイズに対応します。"
+    },
+    {
+      "title": "品質の標準化",
+      "description": "毎回同じ品質で提供します。スタッフの経験や体調に左右されず、安定した味を実現します。"
+    },
+    {
+      "title": "ラテアート印刷（オプション）",
+      "description": "カップにロゴやメッセージを印刷する機能です。体験価値を高めるオプション機能として提供します。"
+    }
+  ],
+  "installationConstraints": {
+    "space": "幅1m × 奥行き0.8m以上のスペースが必要です",
+    "power": "AC100Vの電源が必要です",
+    "environment": "高温多湿を避け、清潔な環境での運用を推奨します"
+  },
+  "suitableFor": [
+    "コーヒー専門店",
+    "カフェチェーン",
+    "オフィス内カフェ",
+    "24時間営業の店舗"
+  ],
+  "notSuitableFor": [
+    "完全手作りにこだわる店",
+    "極小規模の個人店（初期投資が重い）",
+    "既存スタッフが十分で品質も安定している店"
+  ],
+  "purchase": {
+    "priceLabel": "300万円〜500万円",
+    "warranty": "1年間保証",
+    "supportLevel": "1年後は有償サポート（リモート対応、部品交換など）"
+  },
+  "rental": {
+    "priceLabel": "月額15万円〜25万円",
+    "minMonths": 3,
+    "returnPolicyLabel": "最低契約期間後は効果が見られない場合、条件により返却可能です",
+    "supportLevel": "契約期間中は無償サポート（故障時の代替機提供、リモートサポート、定期メンテナンス含む）",
+    "warranty": "1年間保証"
+  },
+  "contract": {
+    "warrantyOneYear": true,
+    "subsidyAvailable": true
+  },
+  "videos": [
+    {
+      "youtubeId": "placeholder1",
+      "title": "Giganteの基本動作",
+      "featured": true
+    },
+    {
+      "youtubeId": "placeholder2",
+      "title": "店舗での運用イメージ",
+      "featured": true
+    },
+    {
+      "youtubeId": "placeholder3",
+      "title": "ラテアート印刷の様子",
+      "featured": false
+    }
+  ],
+  "faq": [
+    {
+      "question": "いきなり人に相談できますか？",
+      "answer": "いいえ。まずAIによる事前ヒアリング（導入可否診断）を受けてください。これにより、お客様の状況を整理し、本当に必要な場合のみ直接相談をご案内します。"
+    },
+    {
+      "question": "購入とレンタルの違いは？",
+      "answer": "購入は初期投資が大きい一方、長期的にはコストが抑えられます。レンタルは月額固定で、契約期間中のサポートが手厚く、初期投資を抑えられます。最低3ヶ月から契約可能で、効果が見られない場合は条件により返却可能です。"
+    },
+    {
+      "question": "1年保証の範囲は？",
+      "answer": "製造上の欠陥や部品の不具合は1年間無償で対応します。購入の場合は1年後は有償サポート、レンタルの場合は契約期間中は無償サポートが継続します。"
+    },
+    {
+      "question": "ラテアート印刷は必須ですか？",
+      "answer": "いいえ、オプション機能です。基本的なドリンク提供のみでも十分に運用できます。ラテアート印刷は体験価値を高める追加機能として提供しています。"
+    },
+    {
+      "question": "設置に必要な条件は？",
+      "answer": "幅1m × 奥行き0.8m以上のスペースとAC100Vの電源が必要です。高温多湿を避け、清潔な環境での運用を推奨します。詳細はAI診断で確認します。"
+    }
+  ]
+}
