@@ -15,4 +15,4 @@ jobs:
           username: ${{ secrets.HETZNER_USER }}
           key: ${{ secrets.HETZNER_SSH_KEY }}
           script: |
-            deploy-unihalogy
+            /usr/local/bin/deploy-unihalogy
