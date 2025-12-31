@@ -4,14 +4,9 @@ on:
   push:
     branches: ["main"]
 
-concurrency:
-  group: deploy-unihalogy
-  cancel-in-progress: true
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
     steps:
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v1.2.0
@@ -19,17 +14,6 @@ jobs:
           host: ${{ secrets.HETZNER_HOST }}
           username: ${{ secrets.HETZNER_USER }}
           key: ${{ secrets.HETZNER_SSH_KEY }}
-          port: 22
-          script_stop: true
-          command_timeout: 30m
-          envs: GITHUB_SHA
+          known_hosts: ${{ secrets.HETZNER_KNOWN_HOSTS }}
           script: |
-            set -euo pipefail
-
-            # known_hosts を固定（安全）
-            mkdir -p ~/.ssh
-            chmod 700 ~/.ssh
-            echo "${{ secrets.HETZNER_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
-            chmod 644 ~/.ssh/known_hosts
-
             /usr/local/bin/deploy-unihalogy
